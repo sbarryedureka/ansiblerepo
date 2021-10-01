@@ -6,3 +6,7 @@
       name: httpd
       enabled: true
       state: started
+  - name: open firewalld
+    firewalld:
+      service: http
+      port: 80/tcp
